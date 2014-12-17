@@ -1,3 +1,7 @@
+
+//equations/relativity//
+//rx = user/perscribed input//
+
 var dailyCal = rxCal
 var RATIO = rxRatio
 var mealsPerDay = rxMPD
@@ -13,20 +17,44 @@ var goalFAT = unitsPerDay * rxRatio
 var goalCHO = unitsPerMeal - goalPRO
 
 var amount = rxGrams
-var food = indexFOOD
-var percentPRO =
-var percentFAT =
-var percentCHO =
 
-var PRO = percentPRO * 0.01 * rxGrams
-var FAT = percentFAT * 0.01 * rxGrams
-var CHO = percentCHO * 0.01 * rxGrams
+var percentPRO =      //?? come back to this part
+var percentFAT =      //?? come back to this part
+var percentCHO =      //?? come back to this part
+
+var PRO = percentPRO * 0.01 * rxGrams  //?? come back to this part
+var FAT = percentFAT * 0.01 * rxGrams  //?? come back to this part
+var CHO = percentCHO * 0.01 * rxGrams  //?? come back to this part
+
+PRO = ing[0];  //first element in each array...correct syntax?
+FAT = ing[1];  //second element in each array
+CHO = ing[2];  //third element in each array
 
 var totalRATIO = totalFAT / (totalPRO + totalCHO)
-var totalCAL = (4*totalPRO) + (9 * totalFAT) + (4 * totalCHO)
-var totalPRO = //add PRO from each input line...still need to add more input lines
-var totalFAT = //add FAT from each input line...still need to add more input lines
-var totalCHO = //add CHO from each input line...still need to add more input lines
+var totalCAL = (4 * totalPRO) + (9 * totalFAT) + (4 * totalCHO)
+
+var ing1 = [10,20,30];
+var ing2 = [10,20,30];
+var ing3 = [10,20,30];
+var ing4 = [10,20,30];
+var ing5 = [10,20,30];
+
+var totalPRO = [ing1[0] + ing2[0] + ing3[0] + ing4[0] + ing5[0]];
+var totalFAT = [ing1[1] + ing2[1] + ing3[1] + ing4[1] + ing5[1]];
+var totalCHO = [ing1[2] + ing2[2] + ing3[2] + ing4[2] + ing5[2]];
+
+//"var amount = rxGrams" is listed after goals
+
+var increaseAmount = function (amount + 1) {};
+
+var decreaseAmount = function (amount - 1) {};
+
+if RATIO = rxRatio {
+    color: green;
+}
+
+
+
 
 
 
