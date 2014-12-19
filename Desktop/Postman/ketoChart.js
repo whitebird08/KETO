@@ -1,6 +1,6 @@
 
 //equations/relativity//
-//rx = user/perscribed input//
+//rx = user/prescribed input//
 
 var dailyCal = rxCal
 var RATIO = rxRatio
@@ -10,13 +10,14 @@ var kCalPerUnit = rxCal / dietaryUnit
 var calPerMeal = rxCal / rxMPD
 var unitsPerDay = rxCal / DietaryUnit
 var unitsPerMeal = unitsPerDay / rxMPD
-var protienPerDay = rxPRO
+var proteinPerDay = rxPRO
 
 var goalPRO = rxPRO / rxMPD
 var goalFAT = unitsPerDay * rxRatio
 var goalCHO = unitsPerMeal - goalPRO
 
 var amount = rxGrams
+
 
 var percentPRO =      //?? come back to this part
 var percentFAT =      //?? come back to this part
@@ -43,11 +44,10 @@ var totalPRO = [ing1[0] + ing2[0] + ing3[0] + ing4[0] + ing5[0]];
 var totalFAT = [ing1[1] + ing2[1] + ing3[1] + ing4[1] + ing5[1]];
 var totalCHO = [ing1[2] + ing2[2] + ing3[2] + ing4[2] + ing5[2]];
 
-//"var amount = rxGrams" is listed after goals
 
-var increaseAmount = function (amount + 1) {};
 
-var decreaseAmount = function (amount - 1) {};
+var increaseAmount
+var decreaseAmount
 
 if RATIO = rxRatio {
     color: green;
@@ -56,5 +56,22 @@ if RATIO = rxRatio {
 
 
 
+$('td').on('increaseAmount', click);
+$('td').on('decreaseAmount', click);
+
+//"var amount = rxGrams" is listed after goals
+function click(increaseAmount) {
+    (amount + 1)
+};
+
+function click(decreaseAmount) {
+    (amount - 1)
+};
+
+
+
+enter amount into box
+calculate
+click to adjust
 
 
